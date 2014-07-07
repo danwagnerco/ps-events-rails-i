@@ -11,13 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define do
-
-  migrations do
-    migration 20121121153536, "", ""
-    migration 20121121175436, "", ""
-    migration 20121210230623, "5c1acde5fb4916a71e581c3891469ecf", "add_image_file_and_capacity_to_events"
-  end
+ActiveRecord::Schema.define(version: 20121210230623) do
 
   create_table "events", force: true do |t|
     t.string   "name"

@@ -1,0 +1,262 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:19:48 -0500
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__130505970__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (103.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:19:50 -0500
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__130505970__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.0ms)
+  [1m[36m (316.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (132.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEvents (20121121153536)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "location" varchar(255), "price" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20121121153536"]]
+  [1m[36m (140.0ms)[0m  [1mcommit transaction[0m
+Migrating to AddFieldsToEvents (20121121175436)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "events" ADD "starts_at" datetime[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "events" ADD "description" text
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20121121175436"]]
+  [1m[35m (127.0ms)[0m  commit transaction
+Migrating to AddImageFileAndCapacityToEvents (20121210230623)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "events" ADD "image_file_name" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "events" ADD "capacity" integer DEFAULT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20121210230623"]]
+  [1m[36m (212.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:20:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-07 15:20:56.770837') ORDER BY "events"."starts_at" ASC
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2821ms (Views: 2771.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-07 10:20:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "events" ("capacity", "created_at", "description", "image_file_name", "location", "name", "price", "starts_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["capacity", 75], ["created_at", Mon, 07 Jul 2014 15:21:16 UTC +00:00], ["description", "Join us for a fun evening of bug smashing! It's a great way to get involved in open source projects whether you're reporting bugs, fixing bugs, or even inadvertently creating a few bugs!"], ["image_file_name", "bugsmash.png"], ["location", "Wynkoop in LoDo, Denver, CO"], ["name", "BugSmash"], ["price", #<BigDecimal:48101e8,'0.0',9(45)>], ["starts_at", Wed, 15 Oct 2014 15:21:16 UTC +00:00], ["updated_at", Mon, 07 Jul 2014 15:21:16 UTC +00:00]]
+  [1m[35m (123.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("capacity", "created_at", "description", "image_file_name", "location", "name", "price", "starts_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["capacity", 100], ["created_at", Mon, 07 Jul 2014 15:21:16 UTC +00:00], ["description", "Got a killer app idea you've been itching to work on? Hunker down at the Hackathon! This is an intense, focused day of hacking on anything you want. The entry fee goes toward a bounty of cash and prizes for winners in a variety of categories."], ["image_file_name", "hackathon.png"], ["location", "Buffalo Billiards, Austin, TX"], ["name", "Hackathon"], ["price", #<BigDecimal:4842a98,'0.15E2',9(45)>], ["starts_at", Tue, 04 Nov 2014 15:21:16 UTC +00:00], ["updated_at", Mon, 07 Jul 2014 15:21:16 UTC +00:00]]
+  [1m[36m (121.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "events" ("capacity", "created_at", "description", "image_file_name", "location", "name", "price", "starts_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["capacity", 50], ["created_at", Mon, 07 Jul 2014 15:21:16 UTC +00:00], ["description", "Kata Camp is where developers go to practice their craft without the interruptions of a typical project. Forget about having to actually ship something. Tell your manager you're going to Kata Camp for the day! Price includes a buffet lunch and a leather-bound journal to record your kata achievements."], ["image_file_name", "katacamp.png"], ["location", "Double R Ranch, Dallas, TX"], ["name", "Kata Camp"], ["price", #<BigDecimal:48481f8,'0.75E2',9(45)>], ["starts_at", Thu, 04 Dec 2014 15:21:16 UTC +00:00], ["updated_at", Mon, 07 Jul 2014 15:21:16 UTC +00:00]]
+  [1m[35m (361.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("capacity", "created_at", "description", "image_file_name", "location", "name", "price", "starts_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["capacity", 15], ["created_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00], ["description", "Start your day off right with a good cup of Joe while you sling some code. By the time you hit the office, you'll be all tuned up!"], ["image_file_name", "coffeecode.png"], ["location", "Stumptown Coffee, Portland, OR"], ["name", "Coffee and Code"], ["price", #<BigDecimal:485abb8,'0.0',9(45)>], ["starts_at", Wed, 24 Dec 2014 15:21:16 UTC +00:00], ["updated_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00]]
+  [1m[36m (286.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (16.0ms)[0m  [1mINSERT INTO "events" ("capacity", "created_at", "description", "image_file_name", "location", "name", "price", "starts_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["capacity", 150], ["created_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00], ["description", "Brew up the tastiest Mac app and win! Entry fee includes a stylish apron."], ["image_file_name", "cocoacookoff.png"], ["location", "1 Infinite Loop, Cupertino, CA"], ["name", "Cocoa Cook-off"], ["price", #<BigDecimal:4861080,'0.25E2',9(45)>], ["starts_at", Sat, 03 Jan 2015 15:21:16 UTC +00:00], ["updated_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00]]
+  [1m[35m (202.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("capacity", "created_at", "description", "image_file_name", "location", "name", "price", "starts_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["capacity", 200], ["created_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00], ["description", "Join us for a non-stop evening of Muppet mania! We'll watch all the hits (and flops), starting with the classics from back in the day and ending with the latest release."], ["image_file_name", "moviemarathon.png"], ["location", "Disney Theatre, Orlando, FL"], ["name", "Muppets Movie Marathon"], ["price", #<BigDecimal:487b150,'0.15E2',9(45)>], ["starts_at", Tue, 13 Jan 2015 15:21:16 UTC +00:00], ["updated_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00]]
+  [1m[36m (187.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "events" ("capacity", "created_at", "description", "image_file_name", "location", "name", "price", "starts_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["capacity", 75], ["created_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00], ["description", "Come sing along with your favorite country band in Music City! Cover charge includes a confidence-boosting beverage of your choice and entry into the YeeHaw Yodelin' contest."], ["image_file_name", "karaoke.png"], ["location", "Hokey Pokey Saloon, Nashville, TN"], ["name", "Hokey Karaoke"], ["price", #<BigDecimal:4880970,'0.25E2',9(45)>], ["starts_at", Fri, 23 Jan 2015 15:21:16 UTC +00:00], ["updated_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00]]
+  [1m[35m (113.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("capacity", "created_at", "description", "image_file_name", "location", "name", "price", "starts_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["capacity", 30], ["created_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00], ["description", "Come meet local Rails developers and enjoy a technical talk by a local celebrity. This week's topic is a comparison of testing frameworks, templating systems, and whether to use tabs or spaces."], ["image_file_name", "placeholder.png"], ["location", "Reston, VA"], ["name", "Rails User Group"], ["price", #<BigDecimal:4891b18,'0.0',9(45)>], ["starts_at", Sat, 05 Jul 2014 15:21:16 UTC +00:00], ["updated_at", Mon, 07 Jul 2014 15:21:17 UTC +00:00]]
+  [1m[36m (176.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-07 15:21:23.016461') ORDER BY "events"."starts_at" ASC[0m
+  Rendered events/index.html.erb within layouts/application (96.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 107.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/bugsmash.png" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/hackathon.png" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/katacamp.png" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/coffeecode.png" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/cocoacookoff.png" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/moviemarathon.png" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+
+
+Started GET "/assets/karaoke.png" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "events" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 07 Jul 2014 15:37:37 UTC +00:00], ["name", "Event 123"], ["updated_at", Mon, 07 Jul 2014 15:37:37 UTC +00:00]]
+  [1m[36m (209.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (141.0ms)[0m  commit transaction
