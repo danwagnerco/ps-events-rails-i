@@ -260,3 +260,1901 @@ Started GET "/assets/karaoke.png" for 127.0.0.1 at 2014-07-07 10:21:23 -0500
   [1m[35m (0.0ms)[0m  begin transaction
   [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
   [1m[35m (141.0ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-08 16:34:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-08 21:34:33.577729') ORDER BY "events"."starts_at" ASC
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 281ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-08 16:34:33 -0500
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-08 21:34:33.827729') ORDER BY "events"."starts_at" ASC[0m
+  Rendered events/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:33 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:33 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:33 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/bugsmash.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/hackathon.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/katacamp.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/cocoacookoff.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/coffeecode.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/moviemarathon.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/karaoke.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:34:34 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (57.0ms)
+  Rendered events/new.html.erb within layouts/application (84.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-08 21:34:57.713729') ORDER BY "events"."starts_at" ASC
+  Rendered events/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/bugsmash.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/hackathon.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/katacamp.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/coffeecode.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/cocoacookoff.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/moviemarathon.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/karaoke.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:34:57 -0500
+
+
+Started POST "/events" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DlftLQyC8yKz790iFwRzTNdsxarpj8vMVYFx06095OM=", "event"=>{"name"=>"", "description"=>"", "location"=>"Denver, CO", "price"=>"50", "starts_at(1i)"=>"2014", "starts_at(2i)"=>"7", "starts_at(3i)"=>"8", "starts_at(4i)"=>"21", "starts_at(5i)"=>"34", "capacity"=>"1", "image_file_name"=>""}, "commit"=>"Create Event"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Redirected to http://localhost:3000/events
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (7.0ms)
+  Rendered events/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:35:09 -0500
+  [1m[36mEvent Load (3.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE ('name') LIMIT 1[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (7.0ms)
+  Rendered events/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-08 21:36:39.401729') ORDER BY "events"."starts_at" ASC[0m
+  Rendered events/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/bugsmash.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/hackathon.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/katacamp.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/coffeecode.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/cocoacookoff.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/moviemarathon.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/karaoke.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:36:39 -0500
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."location" = 'Denver, CO' LIMIT 1[0m
+
+
+Started GET "/events" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-08 21:38:10.594729') ORDER BY "events"."starts_at" ASC
+  Rendered events/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (7.0ms)
+  Rendered events/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:38:10 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:38:26 -0500
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (14.0ms)
+  Rendered events/new.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DlftLQyC8yKz790iFwRzTNdsxarpj8vMVYFx06095OM=", "event"=>{"name"=>"", "description"=>"", "location"=>"Denver, CO", "price"=>"", "starts_at(1i)"=>"2014", "starts_at(2i)"=>"7", "starts_at(3i)"=>"8", "starts_at(4i)"=>"21", "starts_at(5i)"=>"38", "capacity"=>"1", "image_file_name"=>""}, "commit"=>"Create Event"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered events/_form.html.erb (7.0ms)
+  Rendered events/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:38:39 -0500
+
+
+Started POST "/events" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DlftLQyC8yKz790iFwRzTNdsxarpj8vMVYFx06095OM=", "event"=>{"name"=>"", "description"=>"", "location"=>"Denver, CO", "price"=>"", "starts_at(1i)"=>"2014", "starts_at(2i)"=>"7", "starts_at(3i)"=>"8", "starts_at(4i)"=>"21", "starts_at(5i)"=>"38", "capacity"=>"1", "image_file_name"=>""}, "commit"=>"Create Event"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered events/_form.html.erb (9.0ms)
+  Rendered events/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:42:19 -0500
+
+
+Started POST "/events" for 127.0.0.1 at 2014-07-08 16:45:21 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DlftLQyC8yKz790iFwRzTNdsxarpj8vMVYFx06095OM=", "event"=>{"name"=>"", "description"=>"", "location"=>"Denver, CO", "price"=>"", "starts_at(1i)"=>"2014", "starts_at(2i)"=>"7", "starts_at(3i)"=>"8", "starts_at(4i)"=>"21", "starts_at(5i)"=>"38", "capacity"=>"1", "image_file_name"=>""}, "commit"=>"Create Event"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+ERROR: compiling _app_views_events__form_html_erb__712731311_31899444 RAISED C:/github/events/app/views/events/_form.html.erb:2: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...ppend=( if @event.errors.any? );@output_buffer.safe_append='
+...                               ^
+C:/github/events/app/views/events/_form.html.erb:56: syntax error, unexpected keyword_end, expecting ')'
+'; end ;@output_buffer.to_s
+      ^
+C:/github/events/app/views/events/_form.html.erb:57: syntax error, unexpected keyword_ensure, expecting ')'
+C:/github/events/app/views/events/_form.html.erb:59: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_events__form_html_erb__712731311_31899444(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "events/_form";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@event) do |f| @output_buffer.safe_append='
+';@output_buffer.append=( if @event.errors.any? );@output_buffer.safe_append='
+  <section id="errors">
+    <header>
+      <h2>
+        Oops! Your form could not be saved.
+      </h2>
+      <h3>
+        Please correct the following
+        ';@output_buffer.append=( pluralize(@event.errors.count, "error") );@output_buffer.safe_append='
+      </h3>
+    </header>
+    <ul>
+';       @event.errors.full_messages.each do |message| 
+@output_buffer.safe_append='        <li>';@output_buffer.append=( message );@output_buffer.safe_append='</li>
+';       end 
+@output_buffer.safe_append='    </ul>
+  </section>
+  <fieldset>
+    <ol>
+      <li class="required">
+        ';@output_buffer.append=( f.label :name );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_field :name, autofocus: true );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :description );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_area :description, cols: 40, rows: 7 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :location );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_field :location, size: 30 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :price );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.number_field :price, size: 6 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :starts_at );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.datetime_select :starts_at );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :capacity );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.number_field :capacity, size: 6 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :image_file_name, 'Image Filename' );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_field :image_file_name, size: 30, 
+                         placeholder: "GIF, JPG, or PNG file name" );@output_buffer.safe_append='
+      </li>
+    </ol>
+    <p>
+      ';@output_buffer.append=( f.submit );@output_buffer.safe_append='
+      ';@output_buffer.append=( link_to "Cancel", events_path, class: 'button' );@output_buffer.safe_append='
+    </p>
+  </fieldset>
+'; end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:278:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+C:/github/events/app/views/events/new.html.erb:5:in `_app_views_events_new_html_erb__393656005_37078344'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:143:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Ruby200/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/github/events/app/controllers/events_controller.rb:30:in `create'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__159165542__process_action__callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:35:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__279383277__call__callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered events/_form.html.erb (16.0ms)
+  Rendered events/new.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (C:/github/events/app/views/events/_form.html.erb:2: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...ppend=( if @event.errors.any? );@output_buffer.safe_append='
+...                               ^
+C:/github/events/app/views/events/_form.html.erb:56: syntax error, unexpected keyword_end, expecting ')'
+'; end ;@output_buffer.to_s
+      ^
+C:/github/events/app/views/events/_form.html.erb:57: syntax error, unexpected keyword_ensure, expecting ')'
+C:/github/events/app/views/events/_form.html.erb:59: syntax error, unexpected keyword_end, expecting ')'):
+    1: <%= form_for(@event) do |f| %>
+    2: <%= if @event.errors.any? %>
+    3:   <section id="errors">
+    4:     <header>
+    5:       <h2>
+  app/views/events/new.html.erb:5:in `_app_views_events_new_html_erb__393656005_37078344'
+  app/controllers/events_controller.rb:30:in `create'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:45:21 -0500
+Processing by EventsController#new as HTML
+ERROR: compiling _app_views_events__form_html_erb__712731311_31899444 RAISED C:/github/events/app/views/events/_form.html.erb:2: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...ppend=( if @event.errors.any? );@output_buffer.safe_append='
+...                               ^
+C:/github/events/app/views/events/_form.html.erb:56: syntax error, unexpected keyword_end, expecting ')'
+'; end ;@output_buffer.to_s
+      ^
+C:/github/events/app/views/events/_form.html.erb:57: syntax error, unexpected keyword_ensure, expecting ')'
+C:/github/events/app/views/events/_form.html.erb:59: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_events__form_html_erb__712731311_31899444(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "events/_form";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@event) do |f| @output_buffer.safe_append='
+';@output_buffer.append=( if @event.errors.any? );@output_buffer.safe_append='
+  <section id="errors">
+    <header>
+      <h2>
+        Oops! Your form could not be saved.
+      </h2>
+      <h3>
+        Please correct the following
+        ';@output_buffer.append=( pluralize(@event.errors.count, "error") );@output_buffer.safe_append='
+      </h3>
+    </header>
+    <ul>
+';       @event.errors.full_messages.each do |message| 
+@output_buffer.safe_append='        <li>';@output_buffer.append=( message );@output_buffer.safe_append='</li>
+';       end 
+@output_buffer.safe_append='    </ul>
+  </section>
+  <fieldset>
+    <ol>
+      <li class="required">
+        ';@output_buffer.append=( f.label :name );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_field :name, autofocus: true );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :description );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_area :description, cols: 40, rows: 7 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :location );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_field :location, size: 30 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :price );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.number_field :price, size: 6 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :starts_at );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.datetime_select :starts_at );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :capacity );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.number_field :capacity, size: 6 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :image_file_name, 'Image Filename' );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_field :image_file_name, size: 30, 
+                         placeholder: "GIF, JPG, or PNG file name" );@output_buffer.safe_append='
+      </li>
+    </ol>
+    <p>
+      ';@output_buffer.append=( f.submit );@output_buffer.safe_append='
+      ';@output_buffer.append=( link_to "Cancel", events_path, class: 'button' );@output_buffer.safe_append='
+    </p>
+  </fieldset>
+'; end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:278:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+C:/github/events/app/views/events/new.html.erb:5:in `_app_views_events_new_html_erb__393656005_37078344'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:143:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Ruby200/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__159165542__process_action__callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__279383277__call__callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered events/_form.html.erb (3.0ms)
+  Rendered events/new.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (C:/github/events/app/views/events/_form.html.erb:2: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...ppend=( if @event.errors.any? );@output_buffer.safe_append='
+...                               ^
+C:/github/events/app/views/events/_form.html.erb:56: syntax error, unexpected keyword_end, expecting ')'
+'; end ;@output_buffer.to_s
+      ^
+C:/github/events/app/views/events/_form.html.erb:57: syntax error, unexpected keyword_ensure, expecting ')'
+C:/github/events/app/views/events/_form.html.erb:59: syntax error, unexpected keyword_end, expecting ')'):
+    1: <%= form_for(@event) do |f| %>
+    2: <%= if @event.errors.any? %>
+    3:   <section id="errors">
+    4:     <header>
+    5:       <h2>
+  app/views/events/new.html.erb:5:in `_app_views_events_new_html_erb__393656005_37078344'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-08 21:45:43.294729') ORDER BY "events"."starts_at" ASC[0m
+  Rendered events/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/bugsmash.png" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/hackathon.png" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/coffeecode.png" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/katacamp.png" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/cocoacookoff.png" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/moviemarathon.png" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/assets/karaoke.png" for 127.0.0.1 at 2014-07-08 16:45:43 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:45:45 -0500
+Processing by EventsController#new as HTML
+ERROR: compiling _app_views_events__form_html_erb__712731311_37138920 RAISED C:/github/events/app/views/events/_form.html.erb:57: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/github/events/app/views/events/_form.html.erb:59: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_events__form_html_erb__712731311_37138920(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "events/_form";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@event) do |f| @output_buffer.safe_append='
+'; if @event.errors.any? 
+@output_buffer.safe_append='  <section id="errors">
+    <header>
+      <h2>
+        Oops! Your form could not be saved.
+      </h2>
+      <h3>
+        Please correct the following
+        ';@output_buffer.append=( pluralize(@event.errors.count, "error") );@output_buffer.safe_append='
+      </h3>
+    </header>
+    <ul>
+';       @event.errors.full_messages.each do |message| 
+@output_buffer.safe_append='        <li>';@output_buffer.append=( message );@output_buffer.safe_append='</li>
+';       end 
+@output_buffer.safe_append='    </ul>
+  </section>
+  <fieldset>
+    <ol>
+      <li class="required">
+        ';@output_buffer.append=( f.label :name );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_field :name, autofocus: true );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :description );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_area :description, cols: 40, rows: 7 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :location );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_field :location, size: 30 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :price );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.number_field :price, size: 6 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :starts_at );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.datetime_select :starts_at );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :capacity );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.number_field :capacity, size: 6 );@output_buffer.safe_append='
+      </li>
+      <li class="required">
+        ';@output_buffer.append=( f.label :image_file_name, 'Image Filename' );@output_buffer.safe_append='
+        ';@output_buffer.append=( f.text_field :image_file_name, size: 30, 
+                         placeholder: "GIF, JPG, or PNG file name" );@output_buffer.safe_append='
+      </li>
+    </ol>
+    <p>
+      ';@output_buffer.append=( f.submit );@output_buffer.safe_append='
+      ';@output_buffer.append=( link_to "Cancel", events_path, class: 'button' );@output_buffer.safe_append='
+    </p>
+  </fieldset>
+'; end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:278:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+C:/github/events/app/views/events/new.html.erb:5:in `_app_views_events_new_html_erb__393656005_23866032'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:143:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Ruby200/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__159165542__process_action__callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__279383277__call__callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered events/_form.html.erb (5.0ms)
+  Rendered events/new.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (C:/github/events/app/views/events/_form.html.erb:57: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/github/events/app/views/events/_form.html.erb:59: syntax error, unexpected end-of-input, expecting keyword_end):
+    54:     </p>
+    55:   </fieldset>
+    56: <% end %>
+  app/views/events/new.html.erb:5:in `_app_views_events_new_html_erb__393656005_23866032'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (7.0ms)
+  Rendered events/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/events" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-08 21:46:19.790729') ORDER BY "events"."starts_at" ASC
+  Rendered events/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/bugsmash.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/hackathon.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/coffeecode.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/cocoacookoff.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/katacamp.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/karaoke.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/moviemarathon.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:46:20 -0500
+
+
+Started POST "/events" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DlftLQyC8yKz790iFwRzTNdsxarpj8vMVYFx06095OM=", "event"=>{"name"=>"", "description"=>"", "location"=>"Denver, CO", "price"=>"", "starts_at(1i)"=>"2014", "starts_at(2i)"=>"7", "starts_at(3i)"=>"8", "starts_at(4i)"=>"21", "starts_at(5i)"=>"46", "capacity"=>"1", "image_file_name"=>""}, "commit"=>"Create Event"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered events/_form.html.erb (8.0ms)
+  Rendered events/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (25.0ms)
+  Rendered events/new.html.erb within layouts/application (27.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:25 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:46:26 -0500
+
+
+Started POST "/events" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DlftLQyC8yKz790iFwRzTNdsxarpj8vMVYFx06095OM=", "event"=>{"name"=>"", "description"=>"", "location"=>"Denver, CO", "price"=>"", "starts_at(1i)"=>"2014", "starts_at(2i)"=>"7", "starts_at(3i)"=>"8", "starts_at(4i)"=>"21", "starts_at(5i)"=>"46", "capacity"=>"1", "image_file_name"=>""}, "commit"=>"Create Event"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (3.0ms)
+  Rendered events/_form.html.erb (11.0ms)
+  Rendered events/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+Processing by EventsController#new as HTML
+  Rendered shared/_errors.html.erb (0.0ms)
+  Rendered events/_form.html.erb (8.0ms)
+  Rendered events/new.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:49:29 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-07-08 16:49:29 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-07-08 16:49:29 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-07-08 16:49:29 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-07-08 16:49:29 -0500
+
+
+Started POST "/events" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DlftLQyC8yKz790iFwRzTNdsxarpj8vMVYFx06095OM=", "event"=>{"name"=>"Rails User Group", "description"=>"This is going to be great!", "location"=>"Reston, VA", "price"=>"0.00", "starts_at(1i)"=>"2014", "starts_at(2i)"=>"8", "starts_at(3i)"=>"8", "starts_at(4i)"=>"21", "starts_at(5i)"=>"46", "capacity"=>"10", "image_file_name"=>"rails.png"}, "commit"=>"Create Event"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (17.0ms)[0m  INSERT INTO "events" ("capacity", "created_at", "description", "image_file_name", "location", "name", "price", "starts_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["capacity", 10], ["created_at", Tue, 08 Jul 2014 21:51:38 UTC +00:00], ["description", "This is going to be great!"], ["image_file_name", "rails.png"], ["location", "Reston, VA"], ["name", "Rails User Group"], ["price", #<BigDecimal:381f210,'0.0',9(18)>], ["starts_at", Fri, 08 Aug 2014 21:46:00 UTC +00:00], ["updated_at", Tue, 08 Jul 2014 21:51:38 UTC +00:00]]
+  [1m[36m (122.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/10
+Completed 302 Found in 145ms (ActiveRecord: 139.0ms)
+
+
+Started GET "/events/10" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered events/show.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-07-08 16:51:38 -0500
+
+
+Started GET "/events" for 127.0.0.1 at 2014-07-08 16:51:45 -0500
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (starts_at >= '2014-07-08 21:51:45.372729') ORDER BY "events"."starts_at" ASC[0m
+  Rendered events/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bugsmash.png" for 127.0.0.1 at 2014-07-08 16:51:45 -0500
+
+
+Started GET "/assets/moviemarathon.png" for 127.0.0.1 at 2014-07-08 16:51:45 -0500
+
+
+Started GET "/assets/coffeecode.png" for 127.0.0.1 at 2014-07-08 16:51:45 -0500
+
+
+Started GET "/assets/katacamp.png" for 127.0.0.1 at 2014-07-08 16:51:45 -0500
+
+
+Started GET "/assets/cocoacookoff.png" for 127.0.0.1 at 2014-07-08 16:51:45 -0500
+
+
+Started GET "/assets/hackathon.png" for 127.0.0.1 at 2014-07-08 16:51:45 -0500
+
+
+Started GET "/assets/karaoke.png" for 127.0.0.1 at 2014-07-08 16:51:45 -0500
+
+
+Started GET "/events/10" for 127.0.0.1 at 2014-07-08 16:54:03 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered events/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/10/edit" for 127.0.0.1 at 2014-07-08 16:54:05 -0500
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered shared/_errors.html.erb (1.0ms)
+  Rendered events/_form.html.erb (13.0ms)
+  Rendered events/edit.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/10/edit" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered shared/_errors.html.erb (0.0ms)
+  Rendered events/_form.html.erb (8.0ms)
+  Rendered events/edit.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:29 -0500
+
+
+Started PATCH "/events/10" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DlftLQyC8yKz790iFwRzTNdsxarpj8vMVYFx06095OM=", "event"=>{"name"=>"", "description"=>"This is going to be great!", "location"=>"Reston, VA", "price"=>"0", "starts_at(1i)"=>"2014", "starts_at(2i)"=>"8", "starts_at(3i)"=>"8", "starts_at(4i)"=>"21", "starts_at(5i)"=>"46", "capacity"=>"10", "image_file_name"=>"rails.png"}, "commit"=>"Update Event", "id"=>"10"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_errors.html.erb (1.0ms)
+  Rendered events/_form.html.erb (9.0ms)
+  Rendered events/edit.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:35 -0500
+
+
+Started PATCH "/events/10" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DlftLQyC8yKz790iFwRzTNdsxarpj8vMVYFx06095OM=", "event"=>{"name"=>"Rails User Group", "description"=>"This is going to be great!", "location"=>"Reston, VA", "price"=>"0", "starts_at(1i)"=>"2014", "starts_at(2i)"=>"8", "starts_at(3i)"=>"8", "starts_at(4i)"=>"21", "starts_at(5i)"=>"46", "capacity"=>"10", "image_file_name"=>"rails.png"}, "commit"=>"Update Event", "id"=>"10"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/10
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/events/10" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered events/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 16:55:42 -0500
