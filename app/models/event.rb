@@ -9,6 +9,8 @@ class Event < ActiveRecord::Base
     :message  => "must reference a GIF, JPG or PNG image"
   }
 
+  has_many :registrations, dependent: :destroy
+
   def self.upcoming
     where('starts_at >= ?', Time.now).order(:starts_at)
   end

@@ -3229,3 +3229,48 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-12 09:05:57
 
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2014-07-12 09:05:57 -0500
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM schema_migrations[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRegistrations (20140721205431)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "registrations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "how_heard" varchar(255), "event_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  CREATE INDEX "index_registrations_on_event_id" ON "registrations" ("event_id")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140721205431"]]
+  [1m[35m (138.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mEvent Load (4.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "registrations" ("created_at", "email", "event_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 21 Jul 2014 21:04:21 UTC +00:00], ["email", "larry@stoogies.com"], ["event_id", 1], ["name", "Larry"], ["updated_at", Mon, 21 Jul 2014 21:04:21 UTC +00:00]]
+  [1m[35m (154.0ms)[0m  commit transaction
+  [1m[36mRegistration Load (0.0ms)[0m  [1mSELECT "registrations".* FROM "registrations" ORDER BY "registrations"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? ORDER BY "events"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "registrations" ("created_at", "email", "event_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 21 Jul 2014 21:06:38 UTC +00:00], ["email", "moe@stoogies.com"], ["event_id", 1], ["name", "Moe"], ["updated_at", Mon, 21 Jul 2014 21:06:38 UTC +00:00]]
+  [1m[36m (192.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistration Load (0.0ms)[0m  [1mSELECT "registrations".* FROM "registrations" WHERE "registrations"."event_id" = ?[0m  [["event_id", 1]]
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? ORDER BY "events"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "registrations" ("created_at", "email", "event_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 21 Jul 2014 21:16:23 UTC +00:00], ["email", "curly@stoogies.com"], ["event_id", 1], ["name", "Curly"], ["updated_at", Mon, 21 Jul 2014 21:16:23 UTC +00:00]]
+  [1m[36m (119.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "registrations" ("created_at", "email", "event_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 21 Jul 2014 21:23:01 UTC +00:00], ["email", "moe@stoogies.com"], ["event_id", 3], ["name", "Moe"], ["updated_at", Mon, 21 Jul 2014 21:23:01 UTC +00:00]]
+  [1m[36m (115.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRegistration Load (0.0ms)[0m  SELECT "registrations".* FROM "registrations" WHERE "registrations"."event_id" = ?  [["event_id", 3]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "registrations"[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "registrations" WHERE "registrations"."event_id" = ?[0m  [["event_id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mRegistration Load (1.0ms)[0m  [1mSELECT "registrations".* FROM "registrations" WHERE "registrations"."event_id" = ?[0m  [["event_id", 1]]
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "registrations" WHERE "registrations"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "registrations" WHERE "registrations"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "registrations" WHERE "registrations"."id" = ?  [["id", 3]]
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 1]]
+  [1m[35m (112.0ms)[0m  commit transaction
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "registrations" ("created_at", "email", "event_id", "how_heard", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 21 Jul 2014 21:52:51 UTC +00:00], ["email", "larry@stoogies.com"], ["event_id", 2], ["how_heard", "Newsletter"], ["name", "Lary"], ["updated_at", Mon, 21 Jul 2014 21:52:51 UTC +00:00]]
+  [1m[35m (156.0ms)[0m  commit transaction
