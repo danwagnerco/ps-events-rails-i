@@ -114,3 +114,37 @@ Event.create!([
     capacity: 30
   }
 ])
+
+bug_smash = Event.find_by(:name => "Bug Smash")
+
+bug_smash.registrations.create!(
+  [
+    {
+      :name      => "Larry",
+      :email     => "larry@stoogies.com",
+      :how_heard => "Web"
+    },
+    {
+      :name      => "Moe",
+      :email     => "moe@stoogies.com",
+      :how_heard => "Friend"      
+    },
+    {
+      :name      => "Curly",
+      :email     => "curly@stoogies.com",
+      :how_heard => "Work"      
+    }
+  ]
+)
+
+kata_camp = Event.find_by(:name => "Kata Camp")
+
+kata_camp.registration.create!(
+  [
+    {
+      :name      => "Moe",
+      :email     => "moe@stoogies.com",
+      :how_heard => "Friend"
+    }
+  ]
+)
