@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
 Event.create!([
   {
     name: 'BugSmash',
@@ -115,36 +107,36 @@ Event.create!([
   }
 ])
 
-bug_smash = Event.find_by(:name => "Bug Smash")
+bug_smash = Event.find_by(:name => "BugSmash")
 
 bug_smash.registrations.create!(
   [
     {
       :name      => "Larry",
       :email     => "larry@stoogies.com",
-      :how_heard => "Web"
+      :how_heard => "Newsletter"
     },
     {
       :name      => "Moe",
       :email     => "moe@stoogies.com",
-      :how_heard => "Friend"      
+      :how_heard => "Blog Post"      
     },
     {
       :name      => "Curly",
       :email     => "curly@stoogies.com",
-      :how_heard => "Work"      
+      :how_heard => "Twitter"      
     }
   ]
 )
 
 kata_camp = Event.find_by(:name => "Kata Camp")
 
-kata_camp.registration.create!(
+kata_camp.registrations.create!(
   [
     {
       :name      => "Moe",
       :email     => "moe@stoogies.com",
-      :how_heard => "Friend"
+      :how_heard => "Web Search"
     }
   ]
 )
